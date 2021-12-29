@@ -1,6 +1,6 @@
-*{
+/*{
     overflow: auto;
-}
+}*/
 body{
     background-color:#8BA1BB;
     font-family: comic sans ms;
@@ -8,10 +8,11 @@ body{
 }
 div.content{
     background-color: white;
-    margin: -10px 10% 80px 10%;
-    padding: 30px;
-    min-width: 350px;
+    margin: 40px 8px 40px 8px;
+    padding: 0px 8px 20px 8px;
+    /*min-width: 350px;*/
     box-shadow: 0px 0px 8px 8px grey;
+    overflow: visible;
 }
 h1{
     text-align: center;
@@ -32,12 +33,12 @@ p.category{
     background-color: black;
     color: white;
     display: inline-block;
-    margin-top: 50px;
-    margin-bottom: -15px;
+    margin-top: -50px;
+    margin-bottom: 0px;
     padding: 8px 20px;
     font-weight: bold;
     font-size: 16px;
-    bottom: 5;
+    overflow: auto;
     }
 .center{
     text-align: center;
@@ -56,17 +57,19 @@ table.info{
     width: 100%;
     color: white;
     background-color: #7b90acc0;
+    height: 40px;
 }
 div.infor{
     position:relative;
 }
 table.info td {
     vertical-align: top;
-    font-size: small;
+    font-size: 8;
 }
 table.info th {
     vertical-align: bottom;
     padding-bottom: 8px;
+    font-size: 11;
 }
 img.info{
     
@@ -78,7 +81,7 @@ img.info{
     }
 
 div.col{
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -92,12 +95,9 @@ div.col h2{
 
 div.col1{
         display: inline-block;
-    margin-right: 10%;
+/*    margin-right: 10%; */
 }
 
-div.col2{
-    float: right;
-}
 
 p.bord{
     
@@ -117,9 +117,9 @@ div.ingred p{
     
 }
 table.Instruction p.number{
-    background-color: green;
+    background-color: rgb(77, 207, 230);
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     width: 25px;
     height: 25px;
@@ -135,21 +135,79 @@ table.Instruction td.instru{
     padding-left: 10px;
     padding-bottom: 10px;
 
-/*    background-color: green;
-    color: white;
-    
-    font-weight: bold;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    
-    box-sizing: border-box;
-    border-radius: 50%;
-*/
 }
 table.Instruction td{
     vertical-align: top;
+    
 }
 table.Instruction tr{
     height: 40px;
+}
+
+/* For Destktop Styles: */
+@media only screen and (min-width: 768px) {
+    div.content{
+        margin: 80px 10% 80px 10%;
+        padding: 20px 30px 30px 30px;
+        min-width: 350px;
+    } 
+    
+    table.info{
+        height: 100px;
+    }
+    div.infor{
+        position:relative;
+    }
+    table.info td {
+        font-size: 16px;
+    }
+    table.info th {
+        font-size: 20px;
+    }
+
+    div.col{
+        width: 45%;
+        margin-top: 20px;
+    }
+    
+    div.col h2{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 15px;
+        border-bottom: 3px solid rgb(139, 136, 136);
+        padding-bottom: 5px;
+    }
+    
+    div.col1{
+            display: inline-block;
+        margin-right: 10%;
+    }
+    
+    div.col2{
+        float: right;
+    }
+    
+    p.category{
+        text-align: center;
+        background-color: black;
+        color: white;
+        display: inline-block;
+        margin-top: -100px;
+        margin-bottom: 20px;
+        padding: 8px 20px;
+        font-weight: bold;
+        font-size: 16px;
+        overflow: auto;
+        }
+
+  }
+  
+
+  /* For Large Screens: */
+@media only screen and (min-width: 900px) {
+    div.content{
+        margin-left: auto;
+        margin-right: auto;
+        width: 650px;
+    } 
 }
