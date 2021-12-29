@@ -1,0 +1,155 @@
+*{
+    overflow: auto;
+}
+body{
+    background-color:#8BA1BB;
+    font-family: comic sans ms;
+    margin: 0;
+}
+div.content{
+    background-color: white;
+    margin: -10px 10% 80px 10%;
+    padding: 30px;
+    min-width: 350px;
+    box-shadow: 0px 0px 8px 8px grey;
+}
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+p.decscription{
+    /*text-align: center;*/
+    max-width: 400px;
+    display: inline-block;
+}
+div.decscription{
+    font-size: medium;
+    text-align: center;
+}
+p.category{
+    text-align: center;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: -15px;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    
+    }
+.center{
+    text-align: center;
+    width: 100%;
+}
+div.seperator{
+    height: 1px;
+    width: 300px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+table.info{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: #7b90acc0;
+}
+div.infor{
+    position:relative;
+}
+table.info td {
+    vertical-align: top;
+    font-size: small;
+}
+table.info th {
+    vertical-align: bottom;
+    padding-bottom: 8px;
+}
+img.info{
+    
+    display: block;
+    max-height: 400px;
+    object-fit: cover;
+    min-height: 200px;
+    background-color: #8BA1BB;
+    }
+
+div.col{
+    width: 45%;
+    margin-top: 20px;
+}
+
+div.col h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 3px solid rgb(139, 136, 136);
+    padding-bottom: 5px;
+}
+
+div.col1{
+        display: inline-block;
+    margin-right: 10%;
+}
+
+div.col2{
+    float: right;
+}
+
+p.bord{
+    
+    vertical-align: top;
+    padding-bottom: -10px;
+    
+}
+
+div.ingred p{
+    font-size: 14px;
+    border: 2px solid lightgray;
+    padding: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    vertical-align: text-top;
+    
+}
+table.Instruction p.number{
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding-top: 3px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 0;
+}
+
+table.Instruction td.instru{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+/*    background-color: green;
+    color: white;
+    
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    
+    box-sizing: border-box;
+    border-radius: 50%;
+*/
+}
+table.Instruction td{
+    vertical-align: top;
+}
+table.Instruction tr{
+    height: 40px;
+}
